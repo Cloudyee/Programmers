@@ -28,3 +28,22 @@ class Solution {
 //아쉬운점
 //솔루션을 스스로 생각해 내지 못했다.
 //생각보다 풀이가 단순할 수 있으니, 솔루션을 찾아보기 보단 먼저 해결법을 고민하는습관을 들이기
+
+//아래는 다른사람의 코드 중 참고할만한 코드
+//----------------------------------
+class Solution {
+    public String solution(String str1, String str2) {
+        String answer = "";
+
+        int length = str1.length();
+        String[] str1arr = str1.split("");
+        String[] str2arr = str2.split("");
+        for (int i=0; i<length; i++) {
+            answer += str1arr[i]+str2arr[i];
+        }
+
+        return answer;
+    }
+}
+
+//split을 사용해 문자열 분리->배열 생성 후 그를 이용해 answer값 변경
